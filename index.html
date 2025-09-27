@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ilan Lannurien - Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Ilan Lannurien: 3D modeling, Unity C# gameplay systems, interactive video club environment project."
+    />
+    <link rel="stylesheet" href="./static/css/reset.css" />
+    <link rel="stylesheet" href="./static/css/style.css" />
+    <link rel="stylesheet" href="./static/css/macbook-mockup.css" />
+    <!-- Plyr CSS -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.8.3/plyr.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title">Ilan Lannurien - Portfolio</h1>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#demo">Demo</a></li>
+            <li><a href="#contribution">My Contribution</a></li>
+            <li><a href="#features">Key Features</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- (Carousel moved below Modeling section) -->
+
+    <main>
+      <!-- Hero / Intro -->
+      <section class="section hero" id="about">
+        <div class="container cols-2">
+          <div>
+            <h2>About Me</h2>
+            <p>
+              My name is <strong>Ilan Lannurien</strong>, I am a French business
+              school student at KEDGE Business School (Master in Management).
+              I previously studied Economics and Management in Aix UNI and followed
+              two additional tracks: an international English & business
+              communication program and an engineering logic/programming
+              foundation track.
+            </p>
+            <p>
+              At KEDGE I joined the BDA - Lumin'arts association as a passionate 
+              of cinema, image and music. Here, i was able to create productions
+              both visual, such as trailers, and musical with a group of people
+              playing various instruments.
+              These three fields are directly connected through video games,
+              a passion I have had since I was very young and that I would like to turn into my career.
+            </p>
+            <p>
+              Beyond business and data, I love exploring, as I experimented with <strong>3D creation</strong>
+              (Blender, Maya, Substance Painter) and web development (JavaScript, HTML, CSS) 
+              and LaTeX, but found a true passion in <strong>C# & Unity</strong>, where art, 
+              code and interaction meet.
+            </p>
+            <p>
+              I am currently looking for a
+              <strong>6-month international internship</strong> in production,
+              business development or project management in the videogame industry where i could 
+              fully express this passion.
+            </p>
+          </div>
+          <div class="cols-2">
+            <aside class="panel--cv">
+              <img src="static/images/cv/ilan.png" alt="Portrait of Ilan Lannurien">
+            </aside>
+            <aside class="panel panel--tools">
+              <h3>Primary Tools</h3>
+              <ul class="icon-grid">
+                <li>
+                  <img
+                    src="static/images/softwares/unity.svg"
+                    alt="Unity"
+                  /><span>Unity (C#)</span>
+                </li>
+                <li>
+                  <img src="static/images/softwares/maya.svg" alt="Maya" /><span
+                    >Maya</span
+                  >
+                </li>
+                <li>
+                  <img
+                    src="static/images/softwares/substance.svg"
+                    alt="Substance Painter"
+                  /><span>Substance Painter</span>
+                </li>
+                <li>
+                  <img
+                    src="static/images/softwares/ableton-live.svg"
+                    alt="Ableton Live"
+                  /><span>Ableton Live</span>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- Demo Section -->
+      <section class="section" id="demo">
+        <div class="container">
+          <div>
+            <h2>Video Club Demo</h2>
+            <p>
+              The video club demo is a retro-inspired interactive environment in
+              the vibe of the video rental stores of the 90s–2000s
+              with three connected rooms: the main rental shop, a storage room,
+              and a cinema projection room. I wanted not only to model
+              an environment but to make it playable by adding interactions,
+              missions, animations and sound design, all done by myself. 
+              It took approximately 2-3 months of part-time work to complete.
+            </p>
+          </div>
+          <div class="media-stack">
+            <figure>
+              <div class="responsive-video plyr__wrapper">
+                <video id="gameplayPlayer" class="plyr-video" playsinline controls data-poster="static/videos/gameplay/gameplay.jpeg">
+                  <source src="static/videos/gameplay/gameplay.mp4" type="video/mp4" />
+                  Sorry, your browser doesn't support embedded videos.
+                </video>
+              </div>
+              <figcaption>
+                Overall environment layout (demo trailer).
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contribution: Modeling & Texturing -->
+      <section class="section alt" id="contribution">
+        <div class="container contrib-container">
+          <h2>My Contribution</h2>
+          <div class="contrib-layout">
+            <div class="contrib-text-list">
+              <article class="contrib-item" data-shot="static/images/softwares/maya.png">
+                <h3>3D Modeling &amp; Texturing</h3>
+                <ul class="check-list">
+                  <li>Created all meshes from scratch (Blender then Maya).</li>
+                  <li>UV unwrapping &amp; Substance Painter texturing.</li>
+                  <li>Bone structure and baked animations.</li>
+                  <li>Mix of low, mid and high poly workflows.</li>
+                  <li>High poly baking example: aquarium centerpiece.</li>
+                </ul>
+              </article>
+              <!-- Inline full-width meshes carousel inserted here -->
+               <h3 class="band-title">All Meshes (Selection)</h3>
+              <div class="meshes-inline-band" aria-label="All modeled meshes showcase">
+                <div class="meshes-caroussel">
+                  <div class="meshes-caroussel-slide">
+                    <img src="./static/images/meshes/Aquarium.png" alt="Aquarium" />
+                    <img src="./static/images/meshes/Carton.png" alt="Carton" />
+                    <img src="./static/images/meshes/Cassette.png" alt="Cassette" />
+                    <img src="./static/images/meshes/Chaise.png" alt="Chair" />
+                    <img src="./static/images/meshes/Comptoire.png" alt="Counter" />
+                    <img src="./static/images/meshes/Ilan.png" alt="NPC Ilan" />
+                    <img src="./static/images/meshes/Lecteurcassette.png" alt="Cassette player" />
+                    <img src="./static/images/meshes/OfficialSeal.png" alt="Official seal" />
+                    <img src="./static/images/meshes/piano.png" alt="Piano" />
+                    <img src="./static/images/meshes/Projecteur.png" alt="Projector" />
+                    <img src="./static/images/meshes/ProtectionJaquette.png" alt="Tape sleeve protection" />
+                    <img src="./static/images/meshes/Tirroir.png" alt="Drawer" />
+                    <img src="./static/images/meshes/Tv1.png" alt="CRT TV" />
+                  </div>
+                </div>
+              </div>
+
+              <article class="contrib-item" data-shot="static/images/softwares/unity.png">
+                <h3>Gameplay &amp; Coding</h3>
+                <ul class="check-list">
+                  <li>Interaction systems in C#.</li>
+                  <li>NPC interaction &amp; mission logic.</li>
+                  <li>UI objectives tracking.</li>
+                  <li>Piano mission: animated keys + sound triggers.</li>
+                  <li>Cassette mission: collectible &amp; UI trophies.</li>
+                  <li>Audio fade system for adaptive ambience.</li>
+                  <li>Code-driven &amp; Animator blended animations.</li>
+                </ul>
+
+                <br>
+
+                <div class="media-stack">
+                    <figure>
+                        <img
+                            width="100%"
+                            src="static/images/screens/code.png"
+                            alt="Overall environment layout (demo trailer)"
+                        />
+                        <figcaption>
+                            Overall environment layout (demo trailer).
+                        </figcaption>
+                    </figure>
+                </div>
+                
+              </article>
+              <div class="divider-line divider-line--inner" aria-hidden="true"></div>
+
+              <article class="contrib-item" data-shot="static/videos/light/causics-shader.jpeg" data-shot-video="static/videos/light/causics-shader.mp4">
+                <h3>Lighting, Shaders &amp; Post</h3>
+                <ul class="check-list">
+                  <li>Baked + dynamic mixed lighting approach.</li>
+                  <li>Retro color grading &amp; subtle film grain.</li>
+                  <li>Projected light cones &amp; emissive signage.</li>
+                  <li>CRT glow &amp; screen material tuning.</li>
+                  <li>Shader Graph with node for diverse effects.</li>
+                </ul>
+
+                <br>
+
+                <div class="media-stack">
+                    <figure>
+
+                        <video class="auto-vid" width="100%" src="static/videos/graphic-programming-and-shaders/aquarium.mp4" autoplay muted loop playsinline poster="static/videos/graphic-programming-and-shaders/aquarium.jpeg"></video>
+
+                        
+                        <figcaption>
+                            Overall environment layout (demo trailer).
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <br>
+
+                <div class="media-stack">
+                    <figure>
+
+                        <video class="auto-vid" width="100%" src="static/videos/light/projector.mp4" autoplay muted loop playsinline poster="static/videos/light/projector.jpeg"></video>
+
+                        
+                        <figcaption>
+                            Overall environment layout (demo trailer).
+                        </figcaption>
+                    </figure>
+                </div>
+              </article>
+              <div class="divider-line divider-line--inner" aria-hidden="true"></div>
+
+              <article class="contrib-item" data-shot="static/videos/animations/give-paper.jpeg" data-shot-video="static/videos/animations/give-paper.mp4">
+                <h3>Animations</h3>
+                <ul class="check-list">
+                  <li>Door &amp; projector mechanical motions.</li>
+                  <li>Cassette pick-up &amp; shelving sequence.</li>
+                  <li>Piano key press feedback.</li>
+                  <li>NPC idle &amp; interaction loops.</li>
+                </ul>
+
+                <br>
+
+                <div class="media-stack">
+                    <figure>
+
+                        <video class="auto-vid" width="100%" src="static/videos/animations/piano.mp4" autoplay muted loop playsinline poster="static/videos/animations/piano.jpeg"></video>
+
+                        
+                        <figcaption>
+                            Overall environment layout (demo trailer).
+                        </figcaption>
+                    </figure>
+                </div>
+              </article>
+              <div class="divider-line divider-line--inner" aria-hidden="true"></div>
+
+              <article class="contrib-item" data-shot="static/videos/environnement/audio.jpeg" data-shot-video="static/videos/environnement/audio.mp4">
+                <h3>Audio Design &amp; Adaptive Mix</h3>
+                <ul class="check-list">
+                  <li>Area-based ambience blending.</li>
+                  <li>Projector &amp; crowd spatial layering.</li>
+                  <li>Dynamic music attenuation in cinema.</li>
+                  <li>UI &amp; interaction SFX consistency.</li>
+                </ul>
+              </article>
+            </div>
+            <aside class="contrib-sticky">
+              <div class="macbook" aria-label="Illustrative screen for current contribution section">
+                <div class="screen">
+                  <div class="viewport" id="contribViewport" style="background-image:url('static/images/softwares/maya.png');">
+                    <video id="contribViewportVideo" class="contrib-video" muted loop playsinline></video>
+                  </div>
+                </div>
+                <div class="base"></div>
+                <div class="notch"></div>
+              </div>
+            </aside>
+          </div>
+
+
+        </div>
+      </section>
+
+      <!-- Key Features -->
+      <section class="section" id="features">
+        <div class="container">
+          <h2>Key Features</h2>
+          <p class="intro-line">Each core aspect of the demo is illustrated with an inline looping video.</p>
+          <div class="features-detailed">
+            <article class="feature-item">
+              <div class="feature-media-vid">
+                <video class="auto-vid" src="static/videos/environnement/traveling.mp4" autoplay muted loop playsinline poster="static/videos/environnement/traveling.jpeg"></video>
+              </div>
+              <div class="feature-item-text">
+                <h3>Seamless Playable Spaces</h3>
+                <p>Three connected rooms (shop, storage, cinema) with consistent lighting, navigation flow and interaction density. Level layout iterated to balance readability and retro clutter aesthetics.</p>
+                <ul class="mini-list">
+                  <li>Room transitions without hard loads.</li>
+                  <li>Sightlines guiding the player toward objectives.</li>
+                  <li>Prop density tuned for performance & clarity.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="feature-item">
+              <div class="feature-media-vid">
+                <video class="auto-vid" src="static/videos/UI/quest.mp4" autoplay muted loop playsinline poster="static/videos/UI/quest.jpeg"></video>
+              </div>
+              <div class="feature-item-text">
+                <h3>NPC & Mission System</h3>
+                <p>Custom NPC with interaction prompts and branching mission steps controlling cassette retrieval and piano interactions.</p>
+                <ul class="mini-list">
+                  <li>State machine for mission progression.</li>
+                  <li>Contextual UI prompts & objective list.</li>
+                  <li>Face mesh modeled from self for personalization.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="feature-item">
+              <div class="feature-media-vid">
+                <video class="auto-vid" src="static/videos/animations/cassette.mp4" autoplay muted loop playsinline poster="static/videos/animations/cassette.jpeg"></video>
+              </div>
+              <div class="feature-item-text">
+                <h3>Cassette Collection & UI Trophies</h3>
+                <p>Interactive cassette pickup & shelving logic with visual feedback and trophy tracking UI.</p>
+                <ul class="mini-list">
+                  <li>Inventory slot management.</li>
+                  <li>Animated movement path (code‑driven).</li>
+                  <li>Progress feedback panel.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="feature-item">
+              <div class="feature-media-vid">
+                <video class="auto-vid" src="static/videos/animations/piano-simple.mp4" autoplay muted loop playsinline poster="static/videos/animations/piano-simple.jpeg"></video>
+              </div>
+              <div class="feature-item-text">
+                <h3>Piano Mission & Audio Triggers</h3>
+                <p>Animated keys responding to player input triggering layered sound events and unlocking narrative beats.</p>
+                <ul class="mini-list">
+                  <li>Animator + code hybrid sequencing.</li>
+                  <li>Debounce & multi-note handling.</li>
+                  <li>Sound layering with volume blending.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="feature-item">
+              <div class="feature-media-vid">
+                <video class="auto-vid" src="static/videos/light/televisions.mp4" autoplay muted loop playsinline poster="static/videos/light/televisions.jpeg"></video>
+              </div>
+              <div class="feature-item-text">
+                <h3>Retro Art Direction</h3>
+                <p>Inspired by VHS era palette: warm tungsten interiors, saturated signage accents, CRT glow & film grain overlays.</p>
+                <ul class="mini-list">
+                  <li>Subtle chromatic aberration & vignette.</li>
+                  <li>Procedural dust motes for volume depth.</li>
+                  <li>90's-2000's driven modeling & texturing.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section alt" id="skills">
+        <div class="container cols-2">
+          <div>
+            <h2>Skills Gained</h2>
+            <ul class="check-list">
+              <li>
+                <strong>Business &amp; Data:</strong> Analytical mindset,
+                measuring and presenting results.
+              </li>
+              <li>
+                <strong>3D Creation:</strong> Blender, Maya, Substance Painter, Photoshop.
+              </li>
+              <li>
+                <strong>Programming:</strong> C# in Unity, earlier experience
+                JS/HTML/CSS.
+              </li>
+              <li>
+                <strong>Creative Arts:</strong> Cinema, music, visual
+                composition.
+              </li>
+              <li>
+                <strong>Project Management:</strong> Planning, executing &amp;
+                delivering a project.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact / CTA -->
+      <section class="section" id="contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>
+            If you'd like to discuss opportunities, collaboration or just say
+            hello, feel free to reach out.
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:ilan.lannurien@gmail.com"
+              >ilan.lannurien@gmail.com</a
+            >
+          </p>
+          <p>
+            <strong>Linkedin:</strong>
+            <a href="https://www.linkedin.com/in/ilanlannurien/"
+              >linkedin.com/in/ilanlannurien/</a
+            >
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          &copy; <span id="year"></span> Ilan Lannurien. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Plyr JS -->
+    <script src="https://cdn.plyr.io/3.8.3/plyr.polyfilled.js"></script>
+    <script>
+      // Initialize Plyr once DOM is ready
+      document.addEventListener('DOMContentLoaded', function(){
+        const gameplayPlayerEl = document.getElementById('gameplayPlayer');
+        if(gameplayPlayerEl){
+          const gameplayPlayer = new Plyr(gameplayPlayerEl, {
+            settings: ['captions','quality','speed','loop'],
+            controls: [
+              'play-large','restart','rewind','play','fast-forward','progress',
+              'current-time','duration','mute','volume','captions','settings','pip','airplay','fullscreen'
+            ],
+            tooltips: { controls:true, seek:true },
+            keyboard: { focused:true, global:false },
+            clickToPlay: true,
+            hideControls: true,
+            seekTime: 10,
+            volume: 0.8
+          });
+          // Basic event logs (can remove later)
+          gameplayPlayer.on('ready', ()=>{});
+        }
+      });
+    </script>
+    <script>
+      // Duplicate marquee line for seamless loop
+      (function () {
+        var line = document.querySelector(".meshes-caroussel-slide");
+        if (line) {
+          var copy = line.cloneNode(true);
+          document.querySelector(".meshes-caroussel").appendChild(copy);
+        }
+      })();
+
+      // Year
+      document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+      // Lazy activation for videos
+      (function () {
+        const vids = document.querySelectorAll(".auto-vid");
+        if (!("IntersectionObserver" in window)) return;
+        const obs = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((e) => {
+              if (e.isIntersecting) {
+                const v = e.target;
+                try {
+                  v.play();
+                } catch (_) {}
+              }
+            });
+          },
+          { threshold: 0.25 }
+        );
+        vids.forEach((v) => obs.observe(v));
+      })();
+
+      // Contribution sticky dynamic screen
+      (function(){
+        const items = document.querySelectorAll('.contrib-item');
+        const viewport = document.getElementById('contribViewport');
+  const stickyWrap = document.querySelector('.contrib-sticky');
+  const videoEl = document.getElementById('contribViewportVideo');
+        const inlineBand = document.querySelector('.meshes-inline-band');
+        if(!items.length || !viewport) return;
+
+        const setActive = (el) => {
+          items.forEach(i=>i.classList.remove('active'));
+            el.classList.add('active');
+            const shot = el.getAttribute('data-shot');
+            const vid = el.getAttribute('data-shot-video');
+
+            // Reset video state first
+            if(videoEl){
+              videoEl.pause();
+              videoEl.removeAttribute('src');
+              videoEl.style.display = 'none';
+            }
+
+            // Fade effect
+            viewport.style.filter = 'brightness(.6) blur(2px)';
+
+            requestAnimationFrame(()=>{
+              if(vid && videoEl){
+                viewport.style.backgroundImage = shot ? `url('${shot}')` : 'none';
+                videoEl.setAttribute('src', vid);
+                videoEl.style.display = 'block';
+                const playPromise = videoEl.play();
+                if(playPromise && typeof playPromise.then === 'function'){
+                  playPromise.catch(()=>{});
+                }
+              } else if(shot){
+                viewport.style.backgroundImage = `url('${shot}')`;
+              }
+              setTimeout(()=>{ viewport.style.filter=''; }, 80);
+            });
+        };
+
+        // Center-of-viewport selection logic (uniform, replaces previous IO approach)
+        let ticking=false;
+        function evaluate(){
+          ticking=false;
+          const viewportMid = window.innerHeight / 2;
+          let best=null, bestDist=Infinity;
+          items.forEach(i=>{
+            const r = i.getBoundingClientRect();
+            const itemMid = r.top + r.height/2;
+            const d = Math.abs(itemMid - viewportMid);
+            if(d < bestDist){ bestDist=d; best=i; }
+          });
+          if(best && !best.classList.contains('active')) setActive(best);
+        }
+        function schedule(){ if(!ticking){ ticking=true; requestAnimationFrame(evaluate); } }
+        document.addEventListener('scroll', schedule, { passive:true });
+        window.addEventListener('resize', schedule);
+        // initial compute
+        evaluate();
+
+        // Dynamic sticky offset to aim for vertical centering lock
+        function computeStickyOffset(){
+          if(!stickyWrap) return;
+          // We want the sticky element (its top) to start sticking when its center would pass the middle of the viewport
+          const h = stickyWrap.offsetHeight;
+          // Distance from top so that when it sticks the element appears roughly centered
+          const desired = Math.max(40, (window.innerHeight - h)/2);
+          document.documentElement.style.setProperty('--contrib-stick-top', desired + 'px');
+        }
+        computeStickyOffset();
+        window.addEventListener('resize', computeStickyOffset);
+
+        // Align inline carousel band flush-left to viewport even inside grid
+        function alignInlineBand(){
+          if(!inlineBand) return;
+          // Reset transform combination first
+          inlineBand.style.transform = 'translateX(-50%)';
+          // If inside a grid column with inherent horizontal offset, compute true left
+          const rect = inlineBand.getBoundingClientRect();
+            const delta = rect.left; // distance from viewport left
+            // Apply compensation so left edge = 0
+            inlineBand.style.transform = `translateX(calc(-50% - ${delta}px))`;
+        }
+        alignInlineBand();
+        window.addEventListener('resize', alignInlineBand);
+
+        // Initialize first
+        setActive(items[0]);
+      })();
+    </script>
+  </body>
+</html>
