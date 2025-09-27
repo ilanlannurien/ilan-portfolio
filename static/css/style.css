@@ -215,6 +215,19 @@ figcaption { font-size:.65rem; text-transform:uppercase; letter-spacing:.5px; op
 .contrib-item.active h3 { color: var(--accent); }
 .contrib-item.active .check-list li:before { background: var(--accent); box-shadow:0 0 0 3px rgba(var(--accent-rgb), .25); }
 
+/* Media dimming logic: non-active contribution articles have dimmed media */
+.contrib-item .media-stack img,
+.contrib-item .media-stack video {
+  opacity:.2;
+  transition: opacity .35s ease, filter .35s ease;
+  filter:grayscale(.1) saturate(.85);
+}
+.contrib-item.active .media-stack img,
+.contrib-item.active .media-stack video {
+  opacity:1;
+  filter:none;
+}
+
 /* subtle guiding line */
 /* Removed decorative vertical line (user request) */
 /* .contrib-text-list:before { ... } */
