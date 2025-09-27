@@ -24,6 +24,10 @@
   --shadow: 0 4px 16px -4px rgba(0,0,0,.4);
 }
 
+body {
+  overflow-x: hidden;
+}
+
 img {
   user-select: none;
   -webkit-user-drag: none;
