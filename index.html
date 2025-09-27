@@ -531,6 +531,18 @@
         const inlineBand = document.querySelector('.meshes-inline-band');
         if(!items.length || !viewport) return;
 
+        // Responsive floating bottom behavior ( < 701px )
+        function applyFloatMode(){
+          const w = window.innerWidth;
+          if(w < 900){
+            document.body.classList.add('has-contrib-float');
+          } else {
+            document.body.classList.remove('has-contrib-float');
+          }
+        }
+        applyFloatMode();
+        window.addEventListener('resize', applyFloatMode);
+
         const setActive = (el) => {
           items.forEach(i=>i.classList.remove('active'));
             el.classList.add('active');
