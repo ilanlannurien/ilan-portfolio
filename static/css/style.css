@@ -203,6 +203,13 @@ figcaption { font-size:.65rem; text-transform:uppercase; letter-spacing:.5px; op
 .contrib-item:last-child { margin-bottom:0; }
 .contrib-item h3 { margin-top:0; font-size:1rem; }
 .contrib-item .check-list li { font-size:.78rem; }
+/* Default (inactive) bullet style inside contribution items: neutral until active */
+.contrib-item .check-list li:before {
+  background: var(--text); /* neutral / white */
+  box-shadow: 0 0 0 3px rgba(255,255,255,.08);
+  transition: background .25s ease, box-shadow .25s ease, transform .25s ease;
+  opacity:.9;
+}
 
 /* Active state highlight */
 .contrib-item.active h3 { color: var(--accent); }
