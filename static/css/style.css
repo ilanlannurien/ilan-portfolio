@@ -77,7 +77,6 @@ strong { color: #fff; font-weight: 600; }
 .section { padding: clamp(3rem, 7vh, 5.5rem) 0; position:relative; }
 .section.alt { background: var(--bg-alt); }
 .section--band { padding:0; }
-.hero { padding-top: 4rem; }
 
 /* Panels, cards */
 .panel { background: linear-gradient(145deg, #1c2129, #121519); border:1px solid #232a33; border-radius: var(--radius-m); padding:1.2rem 1.3rem 1.4rem; box-shadow: var(--shadow); }
@@ -195,7 +194,7 @@ figcaption { font-size:.65rem; text-transform:uppercase; letter-spacing:.5px; op
     top:auto; 
     background-color: var(--bg-alt);
     padding: 1rem .85rem 1.5rem .85rem; 
-    z-index:100; 
+    z-index:40; 
     border-top:1px solid var(--border-color);
   }
   .contrib-sticky .macbook { 
@@ -236,6 +235,13 @@ figcaption { font-size:.65rem; text-transform:uppercase; letter-spacing:.5px; op
   .plyr__controls__item[data-plyr="play"] {
     display: none !important;
   }
+
+  .site-nav ul {
+    display: none;
+  }
+
+  .hero { padding-top: 4rem; padding-bottom: 0;}
+
 }
 
 .contrib-sticky { position:sticky; top:var(--contrib-stick-top, 6rem); align-self:start; }
